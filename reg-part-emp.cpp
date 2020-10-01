@@ -57,8 +57,14 @@ class parttime:public employee
     cin>>pph;
     sal=bsal+(hrs*pph);
   }
+  void print()
+  {
+    cout<<"\n\nName: "<<name<<"\nID: "<<id;
+    cout<<"\nHours: "<<hrs;
+    cout<<"\nPay per hr: "<<pph;
+    cout<<"\nTotal salary: "<<sal;
+  }
 
- 
 };
 
 int main()
@@ -71,5 +77,6 @@ int main()
   p.get();
   cout<<"\n\n";
   r.print();
+  p.print();
   return 0;
 }
